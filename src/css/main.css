@@ -94,3 +94,27 @@ ol.progtrckr li.progtrckr-done:before {
 ol.progtrckr li.progtrckr-done:hover:before {
   color: #333;
 }
+
+/*
+If your last step is a success step, then you probabaly want to show the green checkmark
+when the user is on the last step it has the 'progtrckr-doing' by default, this below
+css will copy over the green checkmark styles to the last step
+You can comment this out if you want the default grey 'doing' styles for the last step
+*/
+ol.progtrckr li.progtrckr-doing:last-child {
+  color: black;
+  border-bottom: 4px solid #5cb85c;
+}
+
+ol.progtrckr li.progtrckr-doing:last-child:before {
+  content: "\2713";
+  color: white;
+  background-color: #5cb85c;
+  width: 1.2em;
+  line-height: 1.2em;
+  border-radius: 1.2em;
+}
+
+ol.progtrckr li.progtrckr-doing:last-child:hover:before {
+  color: #333;
+}
