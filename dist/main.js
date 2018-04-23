@@ -429,7 +429,7 @@ var StepZilla = function (_Component) {
                 compToRender,
                 _react2.default.createElement(
                     'div',
-                    { style: this.props.showNavigation ? {} : this.hidden, className: 'footer-buttons btn-group' },
+                    { style: this.props.showNavigation ? {} : this.hidden, className: 'footer-buttons btn-group float-right' },
                     this.props.onCancel ? _react2.default.createElement(
                         'button',
                         {

@@ -335,7 +335,7 @@ export default class StepZilla extends Component {
                 }
 
                 {compToRender}
-                <div style={this.props.showNavigation ? {} : this.hidden} className="footer-buttons btn-group">
+                <div style={this.props.showNavigation ? {} : this.hidden} className="footer-buttons btn-group float-right">
                     {
                         this.props.onCancel ?
                         <button
