@@ -36,6 +36,14 @@ export default class Example extends Component {
     }
   }
 
+  onCancel() {
+      console.log("OnCancel Called From Outside");
+  }
+
+  onFinish() {
+      console.log("OnFinish Called From Outside");
+  }
+
   render() {
     const steps =
     [
@@ -51,6 +59,8 @@ export default class Example extends Component {
       <div className='example'>
         <div className='step-progress'>
           <StepZilla
+              onCancel={this.onCancel.bind(this)}
+              onFinish={this.onFinish.bind(this)}
             steps={steps}
             preventEnterSubmission={true}
             nextTextOnFinalActionStep={"Save"}
